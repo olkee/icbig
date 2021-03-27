@@ -1,28 +1,33 @@
 <!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<title>ICBIG - A crazy webpage</title>
-<meta name="author" content="olkee">
-<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
-<script src="js/main.js"></script>
 
+<html lang="fr">
+
+<head>
+
+     <meta charset="utf-8">
+     <title>ICBIG - A crazy webpage</title>
+     <meta name="author" content="olkee">
+     <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+     <script src="js/main.js"></script>
 </head>
+
 <body>
+<p id="cook"></P>
+     <script>
+               document.cookie="prenom=lael; expire=samedi, 24 jul 2021 12:00 UTC, path=/";
+			   var c= document.cookies;
+			   document.getElementById("cook").innerHTML=c;
+     </script>
+<a id="haut"></a>
 <!-- En-tête de la page -->
 <header>
 	<div id="header">
 	   <div id="top_links_block">
 						
-				<ul id="access page">
-				<li><span>home<span class="barre">|</span>
-				</li>
-				<li>
-				<span>download now<span class="barre">|</span>
-                </li>
-                <li>
-				<span>faq<span class="barre"></span>
-				</li>
+				<ul id="accesspage">
+				<li><span>home</span></li>
+				<li><span>download now</span></li>
+                <li><span>faq</span></li>
 				</ul>
         </div>
     </div>
@@ -38,73 +43,83 @@
   </div>
 
 <div>
-   <form id="research section" method="post" action="#">
-   <label for="jeu"></label>
-   <input type ="text"  id="imputtext" name="bof" value="entrez le nom d'un jeu">
+   <form id="imputtext" method="post" action="find games">
+   <label for="gams"></label>
+   <input type ="text"  id="games" name="jeu" value="entrez le nom d'un jeu">
+   <label for="research"></label>
    <input id="research" type="submit" title="rechercher" value="search">
    </form>
    </div>
 </header>
-
-<nav>
-	<div id="menuToggle">
-	 <ul id="menu">
-      <span></span>
-      <span></span>
-      <span></span>
-            <li class="categories"><a href="categories.html">categories</a></li>
-              <ul class="sous-menu">
-                <li class="items"><a href="movies.html">movies</a></li>
-                <li class="items"><a href="music.html">music</a></li>
-                <li class="items"><a href="games.html">games</a>
-				  <ul class="liste games" style=":">
-				  <li>puzzles</li>
-				  <li>cards</li>
-				  <li>mazes</li>
-				  </ul>
-				</li>
-                <li class="items"><a href="shows.html">shows</a></li>
-                <li class="items"><a href="sofware.html">software</a></li>
-                <li class="items"><a href="ebooks.html">ebooks</a></li>
-                <li></li>
-                <li class="items"><a href="faq.ghtml">faq</a></li>
-                <li class="items"><a href="sign.html">sign up</a></li>
-              </ul>
-          <li class="stat"><a href="statistique.html">statisque</a></li>
-
-          <li class="testimonials"><a href="testimonials.html">testimonials</a></li>
-
-             <ul class="deuxieme sous-menu">
-                <li id="temoignage">
-                 <dl>
-                  <dt>"super on trouve vraiment de tout dans ce site.Et les explications sont claires"</p>me for me to choose the best solutions to my problems thanks</dt>
-                    <dd>julie deltras.BE</dd>
-                  <dt>"time for me to choose the best solutions to my problems thanks"</dt>     
-                    <dd>mike powel.uk</dd>
-                  </dl>
-				</li>
-             </ul>
-       </ul>
-</div>
 <main>
-<div id="cards">
+	<div id="menuToggle">
+
+      <span></span>
+      <span></span>
+      <span></span>
+	  
+<div class="wrapper">
+             <div class="row">
+                <div class="col-categories"><a href="categories.html">categories</a>
+                 <ul class="sous-menu">
+                     <li><a href="movies.html">movies</a></li>
+                     <li><a href="music.html">music</a></li>
+                     <li><a href="games.html">games</a></li>
+				
+				          <ul class="sectiongames" style="wrap">
+				          <li>puzzles</li>
+				          <li>cards</li>
+				          <li>mazes</li>
+				          </ul>
+				 
+                     <li class="items"><a href="shows.html">shows</a></li>
+                     <li class="items"><a href="sofware.html">software</a></li>
+                     <li class="items"><a href="ebooks.html">ebooks</a></li>
+                     <li></li>
+                     <li class="items"><a href="faq.ghtml">faq</a></li>
+                     <li class="items"><a href="sign.html">sign up</a></li>
+                   </ul>
+				  
+			    </div>
+</div>
+          <div class="stat"><a href="statistique.html">statisque</a></div>
+         
+          <div class="testimonials"><a href="testimonials.html">testimonials</a></div>
+
+
+    <dl>
+       <dt>"super on trouve vraiment de tout dans ce site.Et les explications sont claires"</dt>	   
+       <dd>julie deltras.BE</dd>
+       <dt>"time for me to choose the best solutions to my problems thanks"</dt>     
+       <dd>mike powel.uk</dd>
+</dl>
+				
+
+</div>
+
+<div id="cards-block">
+<form>
+     <section>
                <h1> formulaire d'inscription</h1>
 			      <p>vous devez vous inscrire pour commencer à jouer.L'inscription est rapide et gratuite!</p>
 			      <p>vous etes deja membres?</p>
-			   <div id="logi-status-wrap>
-			           <form id="login-account" method="get" action="login.php">
-			                <label for="first-enter"></label>
-			                <input type="text"  id="in" name="login" value="identifiant"></input>
-			                <label id="second-enter"></label>
-			                <input type="text" id="inp" name="login" value="email"></input>
-			                <label for="third-enter"></label>
-			                <input type="text" id="inpu" name="login" value="confirme votre email"></input>
-			                <label for="final" id="input" name="login" value ="mot de passe"></label>
-			   
-			           <div class="birday-wrap">
-					   <form id="date de naissance" method="post" action="show birday">
-					   <label for="birday">entrez votre date de naissance</label>
-			            <span class="birday-month" data-type="selectors" data-name="birthday_wrapper" id="first" aria-describedby="js_1">
+	</section>		
+			           
+					  <fieldset>
+			                <label for="identifiant"></label>
+			                <input type="text"  id="identifiant" name="login" value="identifiant">
+			                <label id="mail"></label>
+			                <input type="text" id="mail" name="login" value="email">
+			                <label for="confirmation"></label>
+			                <input type="text" id="confirmation" name="login" value="confirme votre email">
+			                <label for="password"></label>
+			                <input type="text"  id="password" name="login" value="mot de passe">
+							</fieldset>
+			           
+					   <fieldset>
+					   <label for="birthday"></label>
+					   <input type="wrap" id="bd" name="b" value="entrez votre date de naissance">
+			            <span class="birthday-month" data-type="selectors" data-name="birthday_wrapper" id="first" aria-describedby="js_1"> 
 			   <span><select aria-label="jour" name="birthday_day" id="day" title="jour" class="second">
 			   <option value="1">1</option>
 			   <option value="2">2</option>
@@ -224,21 +239,115 @@
 			   <option value="1953">1953</option>
 			   <option value="1952">1952</option>
 			   <option value="1951">1951</option>
-			   </select></span>
+			   </select></span></label>
+			   <label for="pays d'origine">pays:</label>
+			   <span class="pays-contry" data-type="selectors" data-name="contry_wrapper" id="secon" aria-describedby="js_1">
+			  
+			   <select aria-label="payese" name="pays" id="contry" title="pays" class="paese-pays">
+			   	     <option value="ALGERIE" selected="ALGERIE">algerie</option>
+			         <option value="BELGIQUE">belgique</option>
+			         <option value="CAMEROUN">cameroun</option>
+			         <option value="DANEMARK">danemark</option>
+			         <option value="ESPAGNE">espagne</option>
+			         <option value="FRANCE">france</option>
+			         <option value="GABON">gabon</option>
+			         <option value="HONDURAS">honduras</option>
+			         <option value="IMERATES">imerates</option>
+			         <option value="JAPON">japon</option></SELECT>
+					 </span>
+			</fieldset>
 			   </span>
 			   <i class="fin"></i><i class="autrefin"></i>
-			   <div class="_1pc_"></div></div>
-			   
-			   
-			   
-			   
-			   
-			   </form>
-			   
-			   
-			   
-			   
-			   </div>
+			   <fieldset class="_1pc_">
+			       <label for="femme"><input id="femme" type="checkbox" name="sexe" value="woman">femme</label>
+                        <label for="homme"><input  id="homme" type="checkbox" name="sexe" value="man">homme</label>
+                                  <label for="autre"><input id="autre" type="checkbox" name="sexe" value="autre">autre</label>
+			   </fieldset>
+							  
+<fieldset> 
+    <p class="c-d">"j'accepte <a href="conditions.html">les conditions d'utilisations</a>
+	 et <a href="les politiques.html">les politiques d'utilisations</a> de icbig"</p>
+	<label for="validation"><input id="condition" type="checkbox" name="yes or no" value="?"></label>
+</fieldset>
+
+<fieldset class="contenu-boutton">
+<button id="reg-submit-button" name="signup" type="submit">S'inscrire</button>
+</fieldset>
+</form>
+</div>
+</div>
+
+
+<div>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc7r5_gSAVg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>">
+
+</div>
+
+
+<table>
+      <caption>classement mises à jour automatique de 15min meilleurs scores</caption>
+      <thead>
+          <tr>
+		      <th>#</th>
+		      <th>rank</th>
+		      <th>pseudo</th> 
+			  <th>scores</th>
+	     </tr>
+
+ </thead>
+ <tbody>
+          <tr>
+		      <td>top3</td>
+		      <td>1</td>
+              <td>killerplayer</td> 
+			  <td>7500</td>
+              
+		  </tr>
+          <tr>
+	          <td></td>
+			  <td>2</td>
+		      <td>thefan</td>
+		      <td>6500</td>
+              
+		  </tr>
+			  
+          <tr>
+		      <td></td>
+	          <td>3</td>
+              <td>Hatman</td>
+		      <td>6300</td>
+              
+			  </tr>
+			  
+          <tr>
+		       <td>/</td>
+	           <td>4</td>
+		       <td>Dillinger</td>
+		       <td>4000</td>
+		      
+			  </tr>
+			  
+          <tr>
+		      <td>\</td>
+		      <td>5</td>
+		      <td>billyboy</td>
+		      <td>3995</td>
+		  </tr>
+		      <td>\</td>
+		      <td>6</td>
+              <td>Hopeless</td> 
+			  <td>3500</td>
+			  
+ </tbody> 
+ 
+   <tfoot>
+        <tr>
+		    <td colspan="3">Last update:May 2017</td>
+	        
+	    </tr>
+   </tfoot>
+</table>
 </div>
 </main>
 
@@ -251,7 +360,7 @@
 			<li><a href="#"><abbr>FAQ</abbr></a></li>
 			<li><a href="#">Download now</a></li>
 
-		</UL>
+		</ul>
 	</nav>
 	<p class="copyright">The purchase of a membershipis not a licese to download copyrighted material. Please do your part and respect copyrights.</p>
 </footer>
@@ -260,6 +369,7 @@
 	<p>ICBig utilise des cookies aux fins de fournir ses services 
 et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre <a href="#">Charte Cookies</a>.</p>
 </div>
+<p><a href="#haut">haut de page</a></p>
 
 </body>
 </html>
