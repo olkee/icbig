@@ -1,0 +1,262 @@
+
+body{ 
+     width:100%;
+	 height:100%;
+	 margin:0%;
+	 padding;0%;
+	 display:inline-block;
+     font-family: "Gill Sans", sans-serif; 
+     background-color: rgb(105,105,105);
+	 position:absolute;
+	 
+ 
+}
+
+#cook{ 
+     display;inline-block;
+     font-family:cursive;
+	 background-color:rgb(0,191,255);	
+	 border:2px;
+	 box-shadow: 1px 1px 12px #555;
+	 color: white;
+	 position: fixed;
+	 width:100%;
+	 height:5%;
+	 margin: 0%.
+	 padding:0%;
+	  
+}
+
+.logo{
+	 background-color:red;
+	 padding:80px;
+	 margin:10px;
+}
+
+	
+#boxheader {            
+    display:inline;
+	color:white;
+	float: right;
+	height:10px;
+	margin:20px;
+        
+}
+#boxheader ul{
+	float:right;
+	padding:5px;
+	
+}
+
+#boxheader ul li{
+	display: inline;
+	margin-right:10px;;
+	float:rigth;
+	list-style-type:none;
+	paddding:50px;	   
+} 
+#inputtext{	
+	vertical-align:rigth;
+	float:right;
+	padding:0%;
+	
+}
+
+.image{ 
+	
+    text-align:center;
+    float:inline-start;
+	margin-right:20px;
+	/*width:50px;*/
+}
+#icbig{
+	float:left;
+	width:200PX;
+    height:100px;
+	margin:none;
+	background-color:none;
+}
+/*.section{
+	margin-bottom:70px;
+}*/
+
+nav{ 
+    display:block;
+    background-color:#FFA500;
+	width:300PX;
+    height:500px;
+    vertical-align:left;
+    margin-left:10px;
+	text-align:left;
+	margin-top:50px;	
+	font-family: normal;
+	font-weight: 150px;
+	
+}
+
+
+/categories{
+	float: left;
+	font-size:medium;
+	padding-left:5px;
+}
+
+.  nav testimonials{ 
+    text-align:left;
+	font-size:20px;
+	margin:0px;
+}
+
+
+main{
+	display:inline;
+	background-color: white;
+	/*float:center;*/
+	margin-top:10px;
+	
+}
+
+.bigsection{
+	display:inline;
+}
+ .items{
+	  display:inline;
+	  float: right;
+	  color:black;
+	  padding: 5px 8px;
+	  text-decoration: none;
+	  font-size: 17px;
+}
+
+
+ul,li{
+	list-style-type: none;
+	font-weight:bold;
+	color:black;
+}
+ .menu {
+  overflow: hidden;
+  /*background-color:*/
+  position: relative;
+}
+a:link { 
+	text-decoration:none; 
+	color:black;
+} 
+#game li{
+	text-decoration:
+	font-style:italic;
+}
+#inscription {
+	background-color:#F5F5DC;
+	width:500PX;
+    height:650px;
+	float:center;
+	padding-top:5px;
+	margin:0 auto;
+	vertical-align: rigth;
+	padding-left:5px;
+	padding-right:5px;
+	online:none;
+
+}
+.wrapper{
+	display:inline-block;
+    background-color:#FFA500;
+	width:200px;
+	height:300px;
+    vertical-align:left;
+    margin-left:10px;
+	text-align:left;
+	margin-top:10px;
+	vertical-align:left;
+}
+.testimonials{
+	vertical-align: bottom;
+	padding-left:5px;
+}
+.testimonials dl dd {
+	display: block;
+    color:blue;
+	float:right;
+	vertical-align: text-bottom;
+	padding-right:5px;
+	padding-left:5px;
+	
+	
+}
+.testimonials dl dt{ 
+   
+	color:black;
+	font-size:15px;
+	float:left;
+	padding-left:5px;
+	padding-right:5px;
+	
+}
+
+
+#regsubmitbutton{
+	width:5px;
+	height:5px;
+	flex-basis:50%;
+	
+}
+
+#menu ul il a {
+    display:block;
+    padding-top:10px;	
+	color:white;
+	text-decoration:none;
+	
+}
+
+table {
+	border-collapse:collapse;
+	width:30%;
+	background-color:#ADD8E;
+	float:right;
+	padding-bottom:20px;
+		
+}
+
+
+th{
+    background-color:#ADD8E6;
+}
+
+tr:nth-child(1){
+	background-color: #BDB76B;
+}
+tr:nth-child(2){
+    background-color: #BDB76B;
+}
+tr:nth-child(3){
+	background-color:#BDB76B;
+}
+td,th{
+	border:1px solid black;
+	padding:2px;
+	
+} 
+ 
+tabble,tfoot,tr{
+	background-color:rgb(173,216,230);
+}
+
+footer{ 
+    flex-basis;50%;
+	order:1;
+	border-bottom:dashed black;
+	text-align:center;
+	font-size: 10px;
+	  
+}
+#footermenu ul li{
+	display: inline;
+	margin-right:10px;;
+	float:center;
+	list-style-type:none;
+	text-decoration:none;
+    line-height:1.8;	  
+}

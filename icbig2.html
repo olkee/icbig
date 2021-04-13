@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>ICBIG - une page folle </title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="mobile.css">
+        <meta name="author" content="olkee">
+    </head>
+
+    <body>
+        <a id="haut"></a>
+        <p id="cook">
+            <button class="cross" name="close" type="button">&#120;</button> 
+            les cookies nous donnent des poignets d'amour mais donnent des poignets d'informations à nos ordi.Accepte les cookies pour une navigation fluide sans efforts!
+        </P>
+
+        <!-- En-tête de la page -->
+        <header class="container">
+            <div id="boxheader">
+                <ul id="menu">
+                    <li>Home</li>
+                    <li>Download Now</li>
+                    <li>FAQ</li>
+                </ul>			
+            </div>
+            <div class="logo">
+                <div class="image">
+                    <img  id="icbig" src="image/logo-icbig.png" alt="ICBIG"/>	
+                    <img src="image/hhxMhkG.jpg" alt="games of throne">
+                </div>
+                <form id="inputtext" method="post" action="findgames">
+                    <label for="gams"></label>
+                    <input type ="text"  id="games" name="jeu" value="entrez le nom d'un jeu">
+                    <label for="research"></label>
+                    <input id="research" type="submit" title="rechercher" value="search">
+                </form>  
+            </div>	
+        </header>
+        <main>
+            <div class="bigsection">
+            <nav>
+                <div class="wrapper">
+                    <ul class="menu">
+                        <li class="items"
+                            <a href="categories.html">categories</a>
+                            <ul class="sousmenu">
+                                <li><a href="movies.html">&#127909; movies</a></li>
+                                <li><a href="music.html">&#127925; music</a></li>
+                                <li>
+                                    <a href="games.html">&#127918; games</a>
+                                    <ul id="game">
+                                        <li>: puzzles</li>
+                                        <li>: cards</li>
+                                        <li>: mazes</li>
+                                    </ul>
+                                </li>
+                                <li><a href="shows.html">&#127916; shows</a></li>
+                                <li><a href="sofware.html">&#128187; software</a></li>
+                                <li><a href="ebooks.html">&#128216; ebooks</a></li>
+                                <li><a href="faq.ghtml">&#128206; faq</a></li>
+                                <li><a href="sign.html">&#128221; sign up</a></li>
+                            </ul>			  
+                        </li>
+                        <li 
+							class="items"><a href="statistique.html">statisque</a>
+                        </li>
+                    </ul>
+                </div>	 
+                <div class="testimonials">
+                    <a href="testimonials.html">testimonials</a>
+                    <dl>
+                        <dt>"super on trouve vraiment de tout dans ce site.Et les explications sont claires"</dt>	   
+                        <dd>julie deltras.BE</dd>
+                        <dt>"time for me to choose the best solutions to my problems thanks"</dt>     
+                        <dd>mike powel.uk</dd>
+                    </dl>
+                </div>   
+            </nav>
+            <div id="inscription">
+                <form>
+                    <section>
+                        <h1><img src="image/keys.png" alt="la clé du succés"> formulaire d'inscription</h1>
+                        <p>vous devez vous inscrire pour commencer à jouer.L'inscription est rapide et gratuite!</p>
+                        <p>vous etes deja membres?</p>
+                    </section>		
+                    <fieldset>
+                        <label for="identifiant"></label>
+                        <input type="text"  id="identifiant" name="login" value="identifiant">
+                        <label id="mail"></label>
+                        <input type="text" id="email" name="login" value="email">
+                        <label for="confirmation"></label>
+                        <input type="text" id="confirmation" name="login" value="confirme votre email">
+                        <label for="password"></label>
+                        <input type="text" id="password" name="login" value="mot de passe">
+                    </fieldset>     
+                    <fieldset>
+                        <label for="start">Date de naissance: </label>
+                        <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+                        <label for="pays d'origine">pays:</label>
+                        <span class="pays-contry" data-type="selectors" data-name="contry_wrapper" id="secon" aria-describedby="js_1">		
+                            <select aria-label="payese" name="pays" id="contry" title="pays" class="paese-pays">
+                                <option value="ALGERIE" selected="ALGERIE">algerie</option>
+                                <option value="BELGIQUE">belgique</option>
+                                <option value="CAMEROUN">cameroun</option>
+                                <option value="DANEMARK">danemark</option>
+                                <option value="ESPAGNE">espagne</option>
+                                <option value="FRANCE">france</option>
+                                <option value="GABON">gabon</option>
+                                <option value="HONDURAS">honduras</option>
+                                <option value="IMERATES">imerates</option>
+                                <option value="JAPON">japon</option>
+                            </select>
+                        </span>
+                    </fieldset>                   
+                    <fieldset class="genre">
+                            <label for="femme"><input id="femme" type="radio" name="sexe" value="woman">femme</label>
+                             <label for="homme"><input  id="homme" type="radio" name="sexe" value="man">homme</label>
+                            <label for="autre"><input id="autre" type="radio" name="sexe" value="autre">autre</label>
+                    </fieldset>                       
+                    <fieldset> 
+                        <p class="conditions">
+                            "j'accepte <a href="conditions.html">les conditions d'utilisations</a>
+                            et <a href="les politiques.html">les politiques d'utilisations</a> de icbig"
+                        </p>
+						
+                        <label for="validation">
+                            <input id="condition" type="checkbox" name="yes or no" value="?">
+                        </label>
+						
+                    </fieldset>
+                    <fieldset class="bouttond'inscription">
+                        <button id="regsubmitbutton" name="signup" type="submit"><img src="image/signUpBtn.jpg" alt="S'inscrire"></button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="section">
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc7r5_gSAVg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="section">
+                <div id="tab">
+                    <table>
+                        <caption>classement mises à jour automatique de 15min meilleurs scores</caption>
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>rank</th>
+                                <th>pseudo</th> 
+                                <th>scores</th>
+                            </tr>
+
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan=3>top3</td>
+                                <td>1</td>
+                                <td>killerplayer</td> 
+                                <td>7500</td>      
+                            </tr>
+                            <tr>
+                                <td>2</td>  
+                                <td>thefan</td>
+                                <td>6500</td>  
+                            </tr>	  
+                            <tr>
+                                <td>3</td>
+                                <td>Hatman</td>
+                                <td>6300</td>       
+                            </tr>	  
+                            <tr>
+                                <td class="up">&#8599;</td>
+                                <td>4</td>
+                                <td>Dillinger</td>
+                                <td>4000</td>		      
+                            </tr> 
+                            <tr>
+                                <td class="down1">&#8600;</td>
+                                <td>5</td>
+                                <td>billyboy</td>
+                                <td>3995</td>
+                            </tr>
+                                <td class="down2">&#8600;</td>
+                                <td>6</td>
+                                <td>Hopeless</td> 
+                                <td>3500</td>  
+                        </tbody> 
+                        <tfoot>
+                            <tr>
+                                <td colspan="4">Last update:May 2017</td>
+                                
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </main>
+        <!-- Pied de page -->
+        <footer>
+            <div id="footermenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#"><abbr>FAQ</abbr></a></li>
+                    <li><a href="#">Download now</a></li>
+                </ul>
+                <p class="copyright">The purchase of a membershipis not a licese to download copyrighted material. Please do your part and respect copyrights.</p>
+            </div>
+            <div id="cookie_consent">
+                <p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre <a href="#">Charte Cookies</a>.</p>
+            </div>
+            <p><a href="#haut">⮉haut de page</a></p>
+        </footer>
+    </body>
+</html
