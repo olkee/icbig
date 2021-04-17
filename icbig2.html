@@ -27,10 +27,8 @@
 						</ul>			
 					</div>
 					<div class="logo">
-						<!--<div class="image">-->
 							<img  id="icbig" src="image/logo-icbig.png" alt="ICBIG"/>	
-							<img id="got" src="image/hhxMhkG.jpg" alt="games of throne">
-						<!--</div>-->
+							<img id="got" src="image/hhxMhkG.jpg" alt="games of throne">						
 						<form id="inputtext" method="post" action="findgames">
 							<label for="gams"></label>
 							<input type ="text"  id="games" name="jeu" value="entrez le nom d'un jeu">
@@ -46,7 +44,7 @@
 					<nav>
 						<div class="wrapper">
 							<ul class="menu">
-								<li class="items"
+								<li class="items">
 									<a href="categories.html">categories</a>
 									<ul class="sousmenu">
 										<li><a href="movies.html">&#127909; movies</a></li>
@@ -82,25 +80,25 @@
 						</div>   
 					</nav>
 					<div id="inscription">
-						<form>
+						<form  class="form" metod="post" action="traitement.php">
 							<section>
 								<h1><img src="image/keys.png" alt="la clé du succés"> formulaire d'inscription</h1>
 								<p>vous devez vous inscrire pour commencer à jouer.L'inscription est rapide et gratuite!</p>
-								<p>vous etes deja membres?</p>
+								<p> vous etes deja membres? <a href="connectez-vous.html">connectez-vous!</a></p>
 							</section>		
 							<fieldset>
 								<label for="identifiant"></label>
-								<input type="text"  id="identifiant" name="login" value="identifiant">
-								<label id="mail"></label>
-								<input type="text" id="email" name="login" value="email">
+								<input type="text"  id="identifiant" name="identifiant" value=" votre identifiant">
+								<label for="mail"></label>
+								<input type="text" id="email" name="mail" value="email">
 								<label for="confirmation"></label>
-								<input type="text" id="confirmation" name="login" value="confirme votre email">
+								<input type="text" id="confirmation" name="confirmation" value="confirme votre email">
 								<label for="password"></label>
-								<input type="text" id="password" name="login" value="mot de passe">
+								<input type="text" id="password" name="password" value=" ajoutez un mot de passe">
 							</fieldset>     
 							<fieldset>
 								<label for="start">Date de naissance: </label>
-								<input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+								<input type="date" id="start" name="start" value="2003-07-22" min="1950-01-01" max="2003-12-31">
 								<label for="pays d'origine">pays:</label>
 								<span class="pays-contry" data-type="selectors" data-name="contry_wrapper" id="secon" aria-describedby="js_1">		
 									<select aria-label="payese" name="pays" id="contry" title="pays" class="paese-pays">
@@ -116,10 +114,10 @@
 										<option value="JAPON">japon</option>
 									</select>
 								</span>
-							</fieldset>                   
+							</fieldset>                 
 							<fieldset class="genre">
 									<label for="femme"><input id="femme" type="radio" name="sexe" value="woman">femme</label>
-						             <label for="homme"><input  id="homme" type="radio" name="sexe" value="man">homme</label>
+						            <label for="homme"><input id="homme" type="radio" name="sexe" value="man">homme</label>
 									<label for="autre"><input id="autre" type="radio" name="sexe" value="autre">autre</label>
 							</fieldset>                       
 							<fieldset> 
@@ -133,13 +131,16 @@
 								</label>
 								
 							</fieldset>
-							<fieldset class="bouttond'inscription">
-								<button id="regsubmitbutton" name="signup" type="submit"><img src="image/signUpBtn.jpg" alt="S'inscrire"></button>
+							<fieldset class="bd">
+								<button id="rsb" name="signup" type="submit"><img src="image/signUpBtn.jpg" alt="S'inscrire"></button>
 							</fieldset>
 						</form>
 					</div>
 					<div class="section">
-						<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc7r5_gSAVg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div id="video">
+						<h2> comment jouez? </h2>
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc7r5_gSAVg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
 					</div>
 					<div class="section">
 						<div id="tab">
