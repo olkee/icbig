@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>ICBIG - une page folle </title>
     <link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" media="handheld" href="handheld.css">
+	<link rel="stylesheet" media="mobiles" href="mobiles.css">
         <meta name="author" content="olkee">
     </head>
 
@@ -14,9 +14,8 @@
             <button class="cross" name="close" type="button">&#120;</button> 
             les cookies nous donnent des poignets d'amour mais donnent des poignets d'informations à nos ordi.Accepte les cookies pour une navigation fluide sans efforts!
         </P>
-
-        <!-- En-tête du corps de la page -->
-		<div class="container">
+ <!-- En-tête du corps de la page -->
+		<div id="container">
 			<div class="part">
 				<header> 
 					<div id="boxheader">
@@ -31,7 +30,7 @@
 							<img id="got" src="image/hhxMhkG.jpg" alt="games of throne">						
 						<form id="inputtext" method="post" action="findgames">
 							<label for="gams"></label>
-							<input type ="text"  id="games" name="jeu" value="entrez le nom d'un jeu">
+							<input type ="text"  id="game" name="jeu" value="entrez le nom d'un jeu">
 							<label for="research"></label>
 							<input id="research" type="submit" title="rechercher" value="search">
 						</form>  
@@ -40,12 +39,17 @@
 			</div>
 			<div class="part">
 				<main>
-					<div class="bigsection">
+					<div id="mainheader">
+						<h1>categories</h1>
+						<h2>statistiques</h2>
+						<p><a href="#">games&#xBB;cards&#xBB;inscription</a></p>
+					</div>
+					<!--<div class="bigsection">-->
 					<nav>
-						<div class="wrapper">
-							<ul class="menu">
-								<li class="items">
-									<a href="categories.html">categories</a>
+						<!--<div class="wrapper">-->
+							<ul class="choise">
+								<!--<li class="items">-->
+									<!--<a href="categories.html">categories</a>-->
 									<ul class="sousmenu">
 										<li><a href="movies.html">&#127909; movies</a></li>
 										<li><a href="music.html">&#127925; music</a></li>
@@ -58,19 +62,16 @@
 											</ul>
 										</li>
 										<li><a href="shows.html">&#127916; shows</a></li>
-										<li><a href="sofware.html">&#128187; software</a></li>
+										<li><a href="sofware.html">&#128187;software</a></li>
 										<li><a href="ebooks.html">&#128216; ebooks</a></li>
 										<li><a href="faq.ghtml">&#128206; faq</a></li>
 										<li><a href="sign.html">&#128221; sign up</a></li>
-									</ul>			  
-								</li>
-								<li class="items">
-									<a href="statistique.html">statisque</a>
-								</li>
+									</ul>
+								<!--</li>-->									
 							</ul>
-						</div>	 
+						<!--</div>-->	 
 						<div class="testimonials">
-							<a href="testimonials.html">testimonials</a>
+							<a href="testimonials.html">Testimonials</a>
 							<dl>
 								<dt>"super on trouve vraiment de tout dans ce site.Et les explications sont claires"</dt>	   
 								<dd>julie deltras.BE</dd>
@@ -80,72 +81,94 @@
 						</div>   
 					</nav>
 					<div id="inscription">
-						<form  class="form" metod="post" action="traitement.php">
-							<section>
-								<h1><img src="image/keys.png" alt="la clé du succés"> formulaire d'inscription</h1>
-								<p>vous devez vous inscrire pour commencer à jouer.L'inscription est rapide et gratuite!</p>
-								<p> vous etes deja membres? <a href="connectez-vous.html">connectez-vous!</a></p>
-							</section>		
-							<fieldset>
-								<label for="identifiant"></label>
-								<input type="text"  id="identifiant" name="identifiant" value=" votre identifiant">
-								<label for="mail"></label>
-								<input type="text" id="email" name="mail" value="email">
-								<label for="confirmation"></label>
-								<input type="text" id="confirmation" name="confirmation" value="confirme votre email">
-								<label for="password"></label>
-								<input type="text" id="password" name="password" value=" ajoutez un mot de passe">
-							</fieldset>     
-							<fieldset>
-								<label for="start">Date de naissance: </label>
-								<input type="date" id="start" name="start" value="2003-07-22" min="1950-01-01" max="2003-12-31">
-								<label for="pays d'origine">pays:</label>
-								<span class="pays-contry" data-type="selectors" data-name="contry_wrapper" id="secon" aria-describedby="js_1">		
-									<select aria-label="payese" name="pays" id="contry" title="pays" class="paese-pays">
-										<option value="ALGERIE" selected="ALGERIE">algerie</option>
-										<option value="BELGIQUE">belgique</option>
-										<option value="CAMEROUN">cameroun</option>
-										<option value="DANEMARK">danemark</option>
-										<option value="ESPAGNE">espagne</option>
-										<option value="FRANCE">france</option>
-										<option value="GABON">gabon</option>
-										<option value="HONDURAS">honduras</option>
-										<option value="IMERATES">imerates</option>
-										<option value="JAPON">japon</option>
-									</select>
-								</span>
-							</fieldset>                 
-							<fieldset class="genre">
-									<label for="femme"><input id="femme" type="radio" name="sexe" value="woman">femme</label>
-						            <label for="homme"><input id="homme" type="radio" name="sexe" value="man">homme</label>
-									<label for="autre"><input id="autre" type="radio" name="sexe" value="autre">autre</label>
-							</fieldset>                       
-							<fieldset> 
-								<p class="conditions">
-									"j'accepte <a href="conditions.html">les conditions d'utilisations</a>
-									et <a href="les politiques.html">les politiques d'utilisations</a> de icbig"
-								</p>
-								
-								<label for="validation">
-									<input id="condition" type="checkbox" name="yes or no" value="?">
-								</label>
-								
-							</fieldset>
-							<fieldset class="bd">
-								<button id="rsb" name="signup" type="submit"><img src="image/signUpBtn.jpg" alt="S'inscrire"></button>
-							</fieldset>
-						</form>
-					</div>
-					<div class="section">
-						<div id="video">
-						<h2> comment jouez? </h2>
-							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bc7r5_gSAVg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<div class="headlog">
+							<h3><img src="image/keys.png" alt="la clé du succés"></h3>						
+							<h4>  Formulaire d'inscription </h4>
+							<p>vous devez vous inscrire pour commencer à jouer.L'inscription est rapide et gratuite!</p>
+							<p> vous etes deja membres? <a href="connectez-vous.html">connectez-vous!</a></p>
+						</div>	
+						<div class="identification">						
+							<form  class="form" method="post" action="traitement.php">								
+								<fieldset id="account">
+									<label for="identifiant"></label>
+									<input type="text"  id="identifiant" name="identifiant" value=" votre identifiant">
+									<label for="mail"></label>
+									<input type="text" id="email" name="mail" value="email">
+									<label for="confirmation"></label>
+									<input type="text" id="confirmation" name="confirmation" value="confirme votre email">
+									<label for="password"></label>
+									<input type="text" id="password" name="password" value=" ajoutez un mot de passe">
+								</fieldset>   
+								<fieldset id="youfrom">
+									<label for="start">Date de naissance:
+									<input type="date" id="start" name="start" value="2003-07-22" min="1950-01-01" max="2003-12-31">
+									</label>
+								<!--</fieldset>	
+								<!--<fieldset>-->	
+									<label for="ps">pays:
+									<span class="pays-contry" data-type="selectors" data-name="contry_wrapper" id="where">		
+										<select aria-label="payese" name="pays" id="contry" title="pays" class="paese-pays">
+											<option value="ALGERIA" selected="ALGERIE">algerie</option>
+											<option value="BELGIQUE">belgique</option>
+											<option value="CAMEROUN">cameroun</option>
+											<option value="DANEMARK">danemark</option>
+											<option value="ESPAGNE">espagne</option>
+											<option value="FRANCE">france</option>
+											<option value="GABON">gabon</option>
+											<option value="HONDURAS">honduras</option>
+											<option value="IMERATES">imerates</option>
+											<option value="JAPON">japon</option>
+										</select>
+									</span>
+									</label>
+								</fieldset>                 
+								<fieldset id="genre">								
+										<input id="femme" type="radio" name="sexe" value="woman">
+							            <label for="femme">Femme</label>
+										<input id="homme" type="radio" name="sexe" value="man">
+										<label for="homme">Homme</label>
+										<input id="autre" type="radio" name="sexe" value="autre">
+										<label for="autre">Autre</label>
+								</fieldset>                       
+								<fieldset class="conditions">
+									<form>
+										<label for="validation">
+											<input id="condition" type="checkbox" name="yes or no" value="?">
+										</label>
+											"j'accepte <a href="conditions.html">les conditions d'utilisations</a>
+											et <a href="lespolitiques.html">les politiques d'utilisations</a> de icbig"
+									</form>
+									<button class="sinscrire" type="button">s'inscrire</button>	
+								</fieldset>		
+							</form>
+						</div>
+						<div id="social">
+							<div class="facebook">
+								<button class="loginBtn loginBtn--facebook" onclick="location.href='https://en-gb.facebook.com/login'">
+								Login with Facebook
+								</button>
+							</div>
+							<div class="google">
+								<button class="loginBtn loginBtn--google" onclick="location.href='https://accounts.google.com/o/oauth2/auth/oauthchooseaccount?redirect_uri=storagerelay%3A%2F%2Fhttps%2Fdevelopers-dot-devsite-v2-prod.appspot.com%3Fid%3Dauth929222&amp;response_type=permission%20id_token&amp;scope=email%20profile%20openid&amp;openid.realm&amp;client_id=351360855136-c65vr13tal2in9b9m1hdmp5dgr4rie3l.apps.googleusercontent.com&amp;ss_domain=https%3A%2F%2Fdevelopers-dot-devsite-v2-prod.appspot.com&amp;fetch_basic_profile=true&amp;gsiwebsdk=2&amp;flowName=GeneralOAuthFlow'">
+								Login with Google
+								</button>
+							</div>
 						</div>
 					</div>
 					<div class="section">
-						<div id="tab">
+						<div id="video">
+						<h5> comment jouez? </h5>
+							<iframe width="400" height="300" src="https://www.youtube-nocookie.com/embed/bc7r5_gSAVg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="section">
+					<div id="tab">
 							<table>
-								<caption>classement mises à jour automatique de 15min meilleurs scores</caption>
+								<caption>
+									<h4> Classement</h4>
+									<p>classement mises à jour automatique de 15min </p>
+									<h5>meilleurs scores</h5>
+								</caption>
 								<thead>
 									<tr>
 										<th>#</th>
@@ -153,7 +176,6 @@
 										<th>pseudo</th> 
 										<th>scores</th>
 									</tr>
-
 								</thead>
 								<tbody>
 									<tr>
@@ -192,13 +214,13 @@
 								<tfoot>
 									<tr>
 										<td colspan="4">Last update:May 2017</td>
-										
 									</tr>
 								</tfoot>
 							</table>
+							<p><a href="#haut">&#11145;haut de page</a></p>
 						</div>
 					</div>
-				</div>
+				<!--</div>-->
 				</main>
 			</div>	
 			<!-- Pied de page -->
@@ -212,10 +234,9 @@
 						</ul>
 						<p class="copyright">The purchase of a membershipis not a licese to download copyrighted material. Please do your part and respect copyrights.</p>
 					</div>
-					<div id="cookie_consent">
-						<p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les odalités décrites dans notre <a href="#">Charte des Cookies</a>.</p>
+					<div id="cookieconsent">
+						<p>ICBig utilise des cookies aux fins de fournir ses services et proposer des publicités personnalisées. En utilisant le site, vous consentez à cette utilisation selon les modalités décrites dans notre <a href="#">Charte des Cookies</a>.</p>
 					</div>
-					<p><a href="#haut">&#11145;haut de page</a></p>
 				</footer>
 			</div>	
 		</div>

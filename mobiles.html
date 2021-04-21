@@ -1,0 +1,37 @@
+#container {
+	display: flex;
+	flex-wrap:wrap;
+}
+.header{
+	flex-basis:100%;
+}
+.nav{
+	flex-basis:25%;
+}
+.inscription{
+	flex-basis:50%;
+}
+
+footer{
+	flex-basis: 100%;
+}
+@media screen and (max-width:800px){
+	header{
+		flex-basis:100%;
+		order:1
+	}
+	#container{
+		flex-basis:50%;
+		order:2;
+	}
+	footer{
+		order:3;
+	}	
+	
+}
+
+
+
+
+
+
